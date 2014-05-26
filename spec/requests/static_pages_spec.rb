@@ -2,35 +2,29 @@ require 'spec_helper'
 
 describe "Static pages" do
 
-  describe "Home page" do 
+subject {page}
 
-  	it "should have the content 'Home page'" do
-  	  visit '/static_pages/home'
-  	  expect(page).to have_content('Stamford Holiday Home')
-    end
+  describe "Home page" do
+    before { visit root_path}
+
+    it { should have_content('Welcome') }
   end
 
-  describe "Information page" do
 
-    it "should have the content 'Information'" do
-      visit '/static_pages/info'
-      expect(page).to have_content('Information')
-    end
+  describe "Information page" do
+    before { visit info_path }
+    
+    it { should have_content('Information') }    
   end
 
   describe "Pictures page" do
-    
-    it "should have the content 'Pictures'" do
-    	visit '/static_pages/pictures'
-    	expect(page).to have_content('Pictures')
-    end
+    before { visit pictures_path }
+
+    it { should have_content('Pictures') }
   end
 
   describe "Contact page" do
-  
-    it "should have content 'Contact'" do
-      visit '/static_pages/contact'
-      expect(page).to have_content('Contact')
-    end
-  end
+    before { visit contact_path }
+    
+    it { should have_content('Contact') }
 end
