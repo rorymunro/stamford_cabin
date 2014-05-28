@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+$grayMediumLight: #eaeaea;
 /* site wide */
 
 html {
@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	background-image: image-url('view.JPG');
+	background-image: image-url('DSC_0521.JPG');
 background-repeat: no-repeat;
 background-size: 100%;
 }
@@ -76,33 +76,31 @@ h1 {
 /* footer */
 
 footer {
-background: none;
-	margin-top: 25px;
-	padding-top: 25px;
-	padding-left: 10px;
-	padding-right: 10px;
-	
+  margin-top: 25px;
+  padding-top: 5px;
+  border-top: 1px solid #d3b05f;
+  color: #013543;
+  a {
+    color: #a61700;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+      margin-left: 10px;
+
+    }
+  }
 }
 
-footer p {
-	color: white;
-}
-
-footer small {
-	float:left;
-}
-
-footer ul {
-
-	float: right;
-	list-style:none;
-}
-
-footer ul li {
-	color: white;
-	float: left;
-	margin-left: 10px;
-}
 
 
 
@@ -110,7 +108,8 @@ footer ul li {
     background: white;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 10px;
+	
+	border: solid #d3b05f 1px;
 	border-radius: 3px;
 	margin-top:50px;
 
@@ -121,8 +120,8 @@ footer ul li {
 
 
 #homeCabin {
-    border: solid #7abece 1px;
+    border: solid #d3b05f 1px;
 	border-radius: 4px;
-	width: 77%;
+	width: 67%;
 }
 
