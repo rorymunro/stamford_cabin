@@ -4,3 +4,67 @@
   <h1>Pictures</h1>
 </div>
 
+
+<div class="container">
+    <!--  Carousel -->
+  <!--  consult Bootstrap docs at
+        http://twitter.github.com/bootstrap/javascript.html#carousel -->
+  <div id="this-carousel-id" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="active item">
+          <%= image_tag("cabinfront.JPG", alt: "Log Cabin") %>
+	    <div class="carousel-caption">
+          <p>Enjoy the secluded patio at the front of the cabin (weather permitting)</p>
+        </div>
+      </div>
+      
+      <div class="item">
+          <%= image_tag("sideCabin.JPG", alt: "Log Cabin") %>
+        <div class="carousel-caption">
+          <p>The cabin accomodates up to four people.</p>
+        </div>
+      </div>
+
+      <div class="item">
+          <%= image_tag("viewDog.jpg", alt: "Log Cabin") %>
+        <div class="carousel-caption">
+          <p>Join the dog and enjoy the views over the Welland valley.</p>
+        </div>
+      </div>
+
+      <div class="item">
+          <%= image_tag("diningTable.JPG", alt: "Dining Table") %>
+        <div class="carousel-caption">
+          <p>Enjoy your meals at the dining table (or get some work done).</p>
+        </div>
+      </div>
+
+      <div class="item">
+          <%= image_tag("chicken.jpg", alt: "Chickens") %>
+        <div class="carousel-caption">
+          <p>Fresh eggs are available.</p>
+        </div>
+      </div>
+
+      <div class="item">
+          <%= image_tag("pig.jpg", alt: "Pigs") %>
+        <div class="carousel-caption">
+          <p>Go and visit the pigs (unless they've already gone to a better place).</p>
+        </div>
+      </div>
+
+      <div class="item">
+          <%= image_tag("Stamford.jpg", alt: "The george of Stamford") %>
+        <div class="carousel-caption">
+          <p>Within walking distance of the historic town of Stamford, a site often used as a set for costume dramas.</p>
+        </div>
+      </div>
+
+    </div><!-- .carousel-inner -->
+    <!--  next and previous controls here
+          href values must reference the id for this carousel -->
+      <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+  </div>
+
+</div>

@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
+//= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+<script>
+$(function(){
+  $('#myCarousel').carousel();
+});
+</script>
