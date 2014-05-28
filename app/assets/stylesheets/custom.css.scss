@@ -7,7 +7,9 @@ html {
 }
 
 body {
-	
+	background-image: image-url('view.JPG');
+background-repeat: no-repeat;
+background-size: 100%;
 }
 
 section {
@@ -33,11 +35,12 @@ h1,h2, h3, h4, h5, h6 {
 }
 
 #jumb {
-	background: #ff8170;
+	background: #3197b3;
 	border-radius: 3px;
 	padding-bottom: 25px;
 	margin-bottom: 8px;
-	
+	margin-top: 4px;
+	padding-top: 7px;
 
 
 h1 {
@@ -73,13 +76,16 @@ h1 {
 /* footer */
 
 footer {
+background: none;
 	margin-top: 25px;
 	padding-top: 25px;
-	border-top: 1px solid #7abece;
+	padding-left: 10px;
+	padding-right: 10px;
+	
 }
 
 footer p {
-	color: #466d76;
+	color: white;
 }
 
 footer small {
@@ -87,18 +93,29 @@ footer small {
 }
 
 footer ul {
+
 	float: right;
 	list-style:none;
 }
 
 footer ul li {
+	color: white;
 	float: left;
 	margin-left: 10px;
 }
 
 
 
+#main {
+    background: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	border-radius: 3px;
+	margin-top:50px;
 
+
+}
 
 
 
@@ -106,8 +123,6 @@ footer ul li {
 #homeCabin {
     border: solid #7abece 1px;
 	border-radius: 4px;
-	
+	width: 77%;
 }
-
-
 
