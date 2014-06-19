@@ -47,7 +47,7 @@ h2 {
 	margin-bottom: 8px;
 	margin-top: 4px;
 	padding-top: 7px;
-
+    border: solid #d3b05f 1px;
 
 h1 {
 	color: white;
@@ -79,6 +79,12 @@ h1 {
 	}
 }
 
+p {
+	color: #a62815;
+	font-size: 19px;
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+}
+
 /* footer */
 
 footer {
@@ -88,12 +94,17 @@ footer {
   color: #013543;
   a {
     color: #a61700;
+
     &:hover {
       color: $grayDarker;
     }
   }
   small {
     float: left;
+    p {
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+    font-size: 15px;
+    }
   }
   ul {
     float: right;
@@ -106,8 +117,6 @@ footer {
     }
   }
 }
-
-
 
 
 #main {
@@ -123,17 +132,21 @@ footer {
 }
 
 
-
-
 #homeCabin {
     border: solid #d3b05f 1px;
 	border-radius: 4px;
-	width: 77%;
+	width: 87%;
 }
 
 
 
-.carousel-inner > .item > img { margin: 0 auto; }
+.carousel-inner > .item > img { 
+     margin: 0 auto; 
+     width: 950px;
+     height: 550px;
+
+
+}
 
 
 #map-canvas {
@@ -141,7 +154,7 @@ footer {
     height: 350px;
 
     background-color: #CCC;
-    border:solid #6aac2b 1px;
+    border:solid #d3b05f 1px;
     border-radius: 3px;
     margin: 0 auto;
 }

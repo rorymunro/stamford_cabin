@@ -3,9 +3,12 @@
 <div class= "center hero-unit", id= "jumb">
   <h1>Information</h1>
 </div>
-
-<p>Perfectly situated just 5 minutes from the historic town of Stamford and the famous Burghley house. Just 10 minutes drive from Rutland water and the East of England Show Ground. Rockingham race track is also 15 minutes away.</p>
-
+<div class= "text-center">
+  <h3>For pricing and availability please   <%= link_to "Contact", contact_path, class: "btn  btn-success" %></h3></br>
+  <div class= "text-center">
+  <p>Perfectly situated just 5 minutes from the historic town of Stamford and the famous Burghley house. Just 10 minutes drive from Rutland water and the East of England Show Ground. Rockingham race track is also 15 minutes away.</p>
+</div>
+</div>
 
 <div class= "center" id="map-canvas">
 
@@ -24,7 +27,7 @@ function initialize() {
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title: 'Welcome!'
+      title: 'Welcome to the log cabin!'
   });
 }
 
